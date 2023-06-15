@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Button?>
+	
+<HBox xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SampleController" spacing="10">
+   <HBox  spacing="10">
+
+	<Label text="Longeur"></Label>
+	<TextField fx:id="longeur"></TextField>
+	</HBox>
+	<HBox spacing="10">
+	<Label text="largeur"></Label>
+	<TextField fx:id="largeur"></TextField>
+	
+	</HBox>
+	<HBox spacing="10">
+	<Button text="surface" fx:id="sur" onAction="#surface"></Button>
+	<Button text="perimére" fx:id="per" onAction="#surface"></Button>
+	</HBox>
+	<Label text="resultat surface :"></Label>
+	<Label fx:id="surface"></Label>
+	<Label text="resultat perimaire :"></Label>
+	<Label fx:id="perim"></Label>
+</HBox>
